@@ -33,7 +33,7 @@ metadata:
   name: myapp
 spec:
   hosts: # myapp.default.svc.cluster.local
-  - myapp.default.svc.cluster.local
+  - myapp.default.10.130.9.106.xip.io
   gateways:
   - app-gateway
   http:
