@@ -33,19 +33,19 @@ metadata:
   name: myapp
 spec:
   hosts: # myapp.default.svc.cluster.local
-  - myapp
+  - myapp.default.svc.cluster.local
   gateways:
   - app-gateway
   http:
     - route:
       - destination:
           # host: myapp
-          host: myapp-v1.default.10.130.9.106.xip.io
+          host: myapp.default.10.130.9.106.xip.io
           subset: v1
         weight: 0
       - destination:
           # host: myapp
-          host: myapp-v2.default.10.130.9.106.xip.io
+          host: myapp.default.10.130.9.106.xip.io
           subset: v2
         weight: 100        
 ---
