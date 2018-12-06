@@ -32,8 +32,7 @@ kind: VirtualService
 metadata:
   name: myapp
 spec:
-  hosts:
-   - myapp.default.svc.cluster.local
+  hosts: myapp.default.svc.cluster.local
  # - "*"
   gateways:
   - app-gateway
