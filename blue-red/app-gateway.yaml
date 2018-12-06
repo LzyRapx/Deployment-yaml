@@ -33,7 +33,7 @@ metadata:
   name: myapp
 spec:
   hosts: # myapp.default.svc.cluster.local
-  - "*"
+  - myapp
   gateways:
   - app-gateway
   http:
