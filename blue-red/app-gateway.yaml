@@ -47,5 +47,5 @@ spec:
           # host: myapp
           host: myapp.default.10.130.9.106.xip.io
           subset: v2
-        weight: 100        
+        weight: 100      
 ---
