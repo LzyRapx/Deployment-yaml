@@ -36,16 +36,17 @@ spec:
   - "*"
   gateways:
   - app-gateway
+  - mesh
   http:
     - route:
       - destination:
-          # host: myapp
-          host: myapp.default.10.130.9.106.xip.io
+          host: myapp
+          # host: myapp.default.10.130.9.106.xip.io
           subset: v1
         weight: 0
       - destination:
-          # host: myapp
-          host: myapp.default.10.130.9.106.xip.io
+          host: myapp
+          # host: myapp.default.10.130.9.106.xip.io
           subset: v2
         weight: 100      
 ---
