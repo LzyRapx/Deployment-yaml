@@ -1,0 +1,11 @@
+...
+spec:
+  rules:
+  - host: traefik-ui.k8s
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: traefik-web-ui
+          servicePort: web
+...   
